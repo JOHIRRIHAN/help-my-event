@@ -1,5 +1,9 @@
 import { useState } from "react";
 import img from "../../src/assets/bg.jpeg";
+import component from "../../src/assets/Component 5.png";
+import img4 from "../../src/assets/Component 4.png";
+import easy from "../../src/assets/easy.png";
+// import img from "../../src/assets/bg.jpeg";
 export default function FurnitureGrid() {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -15,7 +19,7 @@ export default function FurnitureGrid() {
           <FeatureCard
             icon={
               <img
-                src="../../src/assets/Component 4.png"
+                src={img4}
                 alt="Quick Booking"
                 className="w-14"
               />
@@ -26,7 +30,7 @@ export default function FurnitureGrid() {
           <FeatureCard
             icon={
               <img
-                src="../../src/assets/easy.png"
+                src={easy}
                 alt="Easy Payment"
                 className="w-14"
               />
@@ -37,7 +41,7 @@ export default function FurnitureGrid() {
           <FeatureCard
             icon={
               <img
-                src="../../src/assets/Component 5.png"
+                src={component}
                 alt="Secure Payment"
                 className="w-14"
               />
@@ -48,7 +52,7 @@ export default function FurnitureGrid() {
         </div>
       </div>
       <div className="mt-20 w-full bg-white h-auto md:h-[400px]  rounded-lg overflow-hidden">
-        <div className="conatainer mx-auto  grid grid-cols-1 md:grid-cols-2 px-8">
+        <div className="container mx-auto  grid grid-cols-1 md:grid-cols-2 ">
         <div className="p-8 flex flex-col justify-center  md:text-left">
           <h3 className="text-2xl md:text-4xl/13 font-bold text-gray-800">
             Flexible <span className="text-blue-600">Furniture Rentals</span>{" "}

@@ -5,7 +5,12 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { FaSearch } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io"; // Close icon for toggle
-
+import img1 from '../../src/assets/img_slider1.jpeg'
+import img2 from '../../src/assets/img_slider2.jpeg'
+import img3 from '../../src/assets/img_slider3.jpeg'
+import img4 from '../../src/assets/img_slider4.jpeg'
+import img5 from '../../src/assets/img_slider1.jpeg'
+import img6 from '../../src/assets/img_slider2.jpeg'
 const Hero = () => {
   const [showSearch, setShowSearch] = useState(false); // State for toggle
 
@@ -31,7 +36,7 @@ const Hero = () => {
           modules={[Pagination]}
           className="mySwiper w-full"
         >
-          {["../../src/assets/img_slider1.jpeg", "../../src/assets/img_slider2.jpeg", "../../src/assets/img_slider3.jpeg", "../../src/assets/img_slider4.jpeg", "../../src/assets/img_slider1.jpeg", "../../src/assets/img_slider4.jpeg"].map((src, index) => (
+          {[img1, img2, img3, img4, img5, img6].map((src, index) => (
             <SwiperSlide key={index}>
               <img src={src} alt={`Furniture ${index + 1}`} className="w-full h-[450px] object-cover rounded-2xl shadow-md" />
             </SwiperSlide>
@@ -50,8 +55,8 @@ const Hero = () => {
       </div>
 
       {/* Search Bar */}
-      <div className={`mt-4 transition-all duration-300 ${showSearch ? "block" : "hidden"}  md:flex w-full justify-center`}>
-        <div className="bg-white shadow-lg md:rounded-full p-4 w-full md:w-auto md:flex flex-wrap md:flex-nowrap justify-between items-center gap-2">
+      <div className={`-mt-4 z-50 transition-all duration-300 ${showSearch ? "block" : "hidden"}  md:flex w-full justify-center`}>
+        <div className="bg-white border-[15px]  border-gray-200/25 shadow md:rounded-full p-4 w-full md:max-w-6xl md:flex flex-wrap md:flex-nowrap justify-between items-center gap-2">
           <input type="text" placeholder="Product Name" className="p-2 border-none rounded-full flex-1 mx-2 w-full md:w-auto" />
           <select className="p-2 border-none rounded-full flex-1 mx-2 w-full md:w-auto">
             <option>Distance</option>

@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
-
+import img1 from '../../src/assets/furniture_item1.png'
+import img2 from '../../src/assets/furniture_item2.png'
+import img3 from '../../src/assets/furniture_item3.png'
+import img4 from '../../src/assets/furniture_item4.png'
+import img5 from '../../src/assets/furniture_itrem5.png'
+import img6 from '../../src/assets/furniture_item6.png'
 const categories = [
   "Furniture", "Decorations", "Wedding Essentials", "Clothing", "Event Equipment", "Party Essentials", "Miscellaneous"
 ];
 
 const products = [
-  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: "../../src/assets/furniture_item1.png" },
-  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: "../../src/assets/furniture_item2.png" },
-  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: "../../src/assets/furniture_item3.png" },
-  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: "../../src/assets/furniture_item4.png" },
-  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: "../../src/assets/furniture_itrem5.png" },
-  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: "../../src/assets/furniture_item6.png" },
+  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: img1 },
+  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: img2 },
+  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: img3 },
+  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: img4 },
+  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: img5 },
+  { name: "Leather Club Chair", distance: "10 km away", price: "$8-$30/hour", rating: "4.5 (21)", image: img6 },
 ];
 
 const Furniture = () => {
